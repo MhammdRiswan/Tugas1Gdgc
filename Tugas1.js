@@ -4,12 +4,8 @@ for(i = 0; i < angka; i++){
     console.log(angka);
 }
 
-const readline = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const nilai = 90;
 
-readline.question("Masukkan nilai: ", (nilai) => {
   if(nilai >= 90){
     console.log("Anda mendapatkan kategori nilai A");
   } else if(nilai >= 80){
@@ -19,5 +15,5 @@ readline.question("Masukkan nilai: ", (nilai) => {
   } else if(nilai <= 55){
     console.log("Anda mendapatkan kategori nilai D");
   }
-  readline.close();
-});
+
+
